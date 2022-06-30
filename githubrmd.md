@@ -493,7 +493,7 @@ glimpse(all_trips) #to get a quick view of data frame
     ## $ end_station_id     <chr> NA, NA, NA, NA, NA, NA, NA, NA, NA, "13042", NA, NA~
     ## $ member_casual      <chr> "member", "member", "member", "member", "member", "~
 
-### Identified a few problems that need to be fix:
+### Identified a few problems that need to be fixed:
 
 1 I want to add some more possibilities to aggregate the data since the
 data can only be aggregated at the ride-level. So were going to add some
