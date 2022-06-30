@@ -1,11 +1,9 @@
-Google Data Analytics Certificate Case Ctudy
+Data Analyst Capstone
 ================
 
-# GOOGLE DATA ANALYTICS CASE STUDY
+By: Diwan Paskins
 
-Diwan Paskins
-
-June 29th, 2022
+Date: June 29th, 2022
 
 **Case Study: How Does a Bike-Share Navigate Speedy Succes?**
 
@@ -66,7 +64,7 @@ analysis since it is much more capable of handling large pools of data.
 #### Install packages I will be using to help with analysis:
 
 ``` r
-options(repos = list(CRAN="http://cran.studio.com/"))
+options(repos = list(CRAN="http://cran.studio.com/")) #creates directory to install packages for knitting 
 install.packages("tidyverse") #helps wrangle data
 ```
 
