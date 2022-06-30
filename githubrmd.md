@@ -632,31 +632,9 @@ aggregate(all_trips_v2$ride_length ~ all_trips_v2$member_casual + all_trips_v2$d
 
 ``` r
 #Want them to be in order starting with Sunday as the first day of the week
-day_of_week <- ordered(all_trips_v2$day_of_week, 
+all_trips_v2$day_of_week <- ordered(all_trips_v2$day_of_week, 
                                     levels=c("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"))
 ```
-
-### Now to check the changes
-
-``` r
-aggregate(all_trips_v2$ride_length ~ all_trips_v2$member_casual + all_trips_v2$day_of_week, FUN = mean)
-```
-
-    ##    all_trips_v2$member_casual all_trips_v2$day_of_week all_trips_v2$ride_length
-    ## 1                      casual                   Friday           1845.4728 secs
-    ## 2                      member                   Friday            772.5645 secs
-    ## 3                      casual                   Monday           1960.0605 secs
-    ## 4                      member                   Monday            766.4229 secs
-    ## 5                      casual                 Saturday           2124.8475 secs
-    ## 6                      member                 Saturday            888.5175 secs
-    ## 7                      casual                   Sunday           2245.0838 secs
-    ## 8                      member                   Sunday            900.4007 secs
-    ## 9                      casual                 Thursday           1778.6946 secs
-    ## 10                     member                 Thursday            753.1489 secs
-    ## 11                     casual                  Tuesday           1680.4336 secs
-    ## 12                     member                  Tuesday            742.1712 secs
-    ## 13                     casual                Wednesday           1709.6426 secs
-    ## 14                     member                Wednesday            743.3577 secs
 
 ### Analyze ridership data by type and weekday
 
@@ -732,7 +710,7 @@ all_trips_v2 %>%
     ## `summarise()` has grouped output by 'member_casual'. You can override using the
     ## `.groups` argument.
 
-![](githubrmd_files/figure-gfm/unnamed-chunk-20-1.png)<!-- -->
+![unnamed-chunk-20-1](https://user-images.githubusercontent.com/108440838/176777529-f06c9c31-3c63-4dfc-833e-fbeb2d7ca841.png)
 
 From this chart we will see that on weekdays, bike riders with a
 membership go out on more bike rides compared to the amount of rides
@@ -755,8 +733,7 @@ all_trips_v2 %>%
     ## `.groups` argument.
     ## Don't know how to automatically pick scale for object of type difftime.
     ## Defaulting to continuous.
-
-![](githubrmd_files/figure-gfm/unnamed-chunk-21-1.png)<!-- -->
+![unnamed-chunk-21-1](https://user-images.githubusercontent.com/108440838/176777803-7f0953a2-8e45-486d-beb3-82e94653f1f5.png)
 
 From this chart we will see that casual bike riders spend more time out
 on the bikes compared to riders with a membership.
