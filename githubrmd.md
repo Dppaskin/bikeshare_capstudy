@@ -756,8 +756,7 @@ write.csv(counts, file = "avg_ride_length.csv")
 services by annual members.
 
 2 Offer attractive promotions for new and returning members to increase
-the number of casual user subscribers and incentives for using the bike
-share services on weekdays.
+the number of casual user subscribers. Also provide incentives for using the bike share services on weekdas
 
 3 We also could offer weekly challenges offering incentives for riders
 who exceed a certain number of rides or duration geared towards to
